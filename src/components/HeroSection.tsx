@@ -1,5 +1,5 @@
 
-import { GitHub, Linkedin, Mail, Phone } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 
 const HeroSection = () => {
@@ -64,7 +64,7 @@ const HeroSection = () => {
                 className="text-gray-300 hover:text-white transition-colors hover:scale-110"
                 aria-label="GitHub"
               >
-                <GitHub size={24} className="animate-float" />
+                <Github size={24} className="animate-float" />
               </a>
               <a
                 href="https://www.linkedin.com/in/satya-kumar-chaudhary/"
