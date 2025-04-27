@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, WhatsApp } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 
 const HeroSection = () => {
@@ -41,7 +41,7 @@ const HeroSection = () => {
               <span className="gradient-text">Satya Kumar</span> Chaudhary
             </h1>
             <p className="text-gray-300 text-xl mb-8 max-w-lg reveal animate-fade-in-up animate-delay-500">
-              <span className="text-white">Passionate Web Developer</span> | MERN Stack Enthusiast | Problem Solver
+              <span className="text-white">Full Stack Developer</span> | MERN Stack Enthusiast | Problem Solver
             </p>
             <p className="flex items-center mb-6 text-gray-300 reveal animate-fade-in-up animate-delay-700">
               <span className="mr-2">📍</span> Punjab, India
@@ -58,7 +58,7 @@ const HeroSection = () => {
             
             <div className="flex space-x-5 reveal animate-fade-in-up animate-delay-900">
               <a
-                href="https://github.com/satyakumarchaudhary"
+                href="https://github.com/satyakumarch"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition-colors hover:scale-110"
@@ -67,7 +67,7 @@ const HeroSection = () => {
                 <Github size={24} className="animate-float" />
               </a>
               <a
-                href="https://www.linkedin.com/in/satya-kumar-chaudhary/"
+                href="https://www.linkedin.com/in/satyakumar12/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition-colors hover:scale-110"
@@ -76,18 +76,27 @@ const HeroSection = () => {
                 <Linkedin size={24} className="animate-float animate-delay-300" />
               </a>
               <a
-                href="mailto:satyakumarchaudhary7@gmail.com"
+                href="mailto:satyakumarchaudhary603@gmail.com"
                 className="text-gray-300 hover:text-white transition-colors hover:scale-110"
                 aria-label="Email"
               >
                 <Mail size={24} className="animate-float animate-delay-500" />
               </a>
               <a
-                href="tel:+9779801234567"
+                href="tel:+918934856824"
                 className="text-gray-300 hover:text-white transition-colors hover:scale-110"
                 aria-label="Phone"
               >
                 <Phone size={24} className="animate-float animate-delay-700" />
+              </a>
+              <a
+                href="https://wa.me/918934856824"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white transition-colors hover:scale-110"
+                aria-label="WhatsApp"
+              >
+                <WhatsApp size={24} className="animate-float animate-delay-900" />
               </a>
             </div>
           </div>
@@ -96,9 +105,11 @@ const HeroSection = () => {
             <div className="relative h-80 w-80 md:h-96 md:w-96">
               <div className="absolute inset-0 bg-gradient-to-r from-portfolio-blue to-portfolio-purple rounded-full opacity-20 animate-pulse"></div>
               <div className="absolute inset-4 bg-card rounded-full overflow-hidden border-2 border-portfolio-purple/50 reveal animate-scale-in">
-                <div className="absolute inset-0 flex items-center justify-center text-5xl font-bold">
-                  <span className="gradient-text">SK</span>
-                </div>
+                <img 
+                  src="/lovable-uploads/0f72cd77-6ae6-4ac0-8af7-d9a9fa10e9c9.png" 
+                  alt="Satya Kumar Chaudhary"
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
             </div>
           </div>
