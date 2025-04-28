@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 const skills = [
   {
     category: 'Languages',
-    items: ['JavaScript', 'C++', 'Python', 'Java', 'SQL']
+    items: ['JavaScript', 'C++', 'Java', 'SQL']
   },
   {
     category: 'Frameworks',
@@ -50,20 +50,20 @@ const SkillsSection = () => {
   }, []);
 
   return (
-    <section id="skills">
-      <div className="container mx-auto px-4">
+    <section id="skills bg-color-red" >
+      <div className="container mx-auto px-4  ">
         <h2 className="section-heading reveal">Skills</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto ">
           {skills.map((skillGroup, index) => (
             <div 
               key={index} 
-              className="skill-card reveal"
+              className="skill-card reveal "
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <h3 className="text-xl font-bold mb-4 gradient-text">{skillGroup.category}</h3>
               
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 bg-slate-800 border-10">
                 {skillGroup.items.map((skill, i) => (
                   <span 
                     key={i} 

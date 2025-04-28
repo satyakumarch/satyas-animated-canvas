@@ -56,19 +56,19 @@ const ContactSection = () => {
     {
       icon: <Mail className="text-portfolio-purple" size={20} />,
       label: 'Email',
-      value: 'satyakumarchaudhary7@gmail.com',
-      href: 'mailto:satyakumarchaudhary7@gmail.com'
+      value: 'satyakumarchaudhary603@gmail.com',
+      href: 'mailto:satyakumarchaudhary603@gmail.com'
     },
     {
       icon: <Phone className="text-portfolio-purple" size={20} />,
       label: 'Phone',
-      value: '+977 9801234567',
-      href: 'tel:+9779801234567'
+      value: '+91 8934856824',
+      href: 'tel:+91 8934856824'
     },
     {
       icon: <MapPin className="text-portfolio-purple" size={20} />,
       label: 'Location',
-      value: 'Punjab, India',
+      value: 'Lumbini, Nepal',
       href: 'https://maps.google.com/?q=Punjab,India'
     }
   ];
@@ -106,7 +106,7 @@ const ContactSection = () => {
               <h4 className="text-xl font-bold mb-4">Connect With Me</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com/satyakumarchaudhary"
+                  href="https://github.com/satyakumarch"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition-colors"
@@ -117,7 +117,7 @@ const ContactSection = () => {
                   </svg>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/satya-kumar-chaudhary/"
+                  href="https://www.linkedin.com/in/satyakumar12/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition-colors"

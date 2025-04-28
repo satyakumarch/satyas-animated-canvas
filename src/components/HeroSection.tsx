@@ -40,9 +40,9 @@ const HeroSection = () => {
             <h1 ref={titleRef} className="text-4xl md:text-6xl font-bold mb-6 reveal animate-fade-in-up animate-delay-300">
               <span className="gradient-text">Satya Kumar</span> Chaudhary
             </h1>
-            <p className="text-gray-300 text-xl mb-8 max-w-lg reveal animate-fade-in-up animate-delay-500">
-              <span className="text-white">Full Stack Developer</span> | MERN Stack Enthusiast | Problem Solver
-            </p>
+            <p className="text-gray-300 text-xl mb-8 max-w-lg opacity-0 transform translate-y-4 transition-all duration-1000 ease-out animate-fade-in-up delay-500">
+  <span className="text-white">Full Stack Developer</span> | MERN Stack Enthusiast | Problem Solver
+</p>
             <p className="flex items-center mb-6 text-gray-300 reveal animate-fade-in-up animate-delay-700">
               <span className="mr-2">📍</span> Punjab, India
             </p>
@@ -55,7 +55,7 @@ const HeroSection = () => {
                 View Projects
               </a>
               <a 
-                href="/satya.pdf" 
+                href="/satyakumar.pdf" 
                 download 
                 className="btn-secondary flex justify-center items-center gap-2 hover:bg-portfolio-blue/10"
               >

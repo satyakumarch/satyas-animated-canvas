@@ -7,7 +7,8 @@ const projects: ProjectType[] = [
     id: 1,
     title: 'Food Hub Website',
     description: 'A comprehensive homestay booking platform that allows users to browse, book, and review homestay options in various locations.',
-    image: 'food-hub.jpg',
+    image: 'food.png'
+    ,
     technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
     features: [
       'User authentication and profile management',
@@ -16,14 +17,14 @@ const projects: ProjectType[] = [
       'Review and rating system',
       'Host dashboard for property management'
     ],
-    githubLink: 'https://github.com/satyakumarchaudhary/food-hub',
-    liveLink: 'https://food-hub.example.com'
+    githubLink: 'https://github.com/satyakumarch/FoodHub',
+    liveLink: 'https://foodhub975.netlify.app/'
   },
   {
     id: 2,
     title: 'E-Commerce Website',
     description: 'A feature-rich online shopping platform offering a seamless browsing and purchasing experience for users across various product categories.',
-    image: 'e-commerce.jpg',
+    image: 'ecom.png',
     technologies: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'Stripe API'],
     features: [
       'Responsive product catalog with filtering',
@@ -32,9 +33,43 @@ const projects: ProjectType[] = [
       'Order tracking and history',
       'Admin dashboard for inventory management'
     ],
-    githubLink: 'https://github.com/satyakumarchaudhary/e-commerce',
-    liveLink: 'https://e-commerce.example.com'
+    githubLink: 'https://github.com/satyakumarch/ECommerce',
+    liveLink: 'https://ecommercesatya.netlify.app/'
+  },
+  {
+    id: 3,
+    title: 'School Website - SJCSS',
+    description: 'A professional and engaging website for Shree Janchetana Community Secondary School, designed to showcase academic excellence, student life, and school services, while encouraging admissions through an intuitive user experience.',
+    image: 'school.png', // Assuming you have saved the school image as sjcss.png
+    technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
+    features: [
+      'Hero section highlighting the school’s mission and vision',
+      'Smooth navigation with sections like Home, About Us, Services, Academics, and Alumni',
+      'Call-to-action buttons for admissions and school exploration',
+      'Student success statistics and achievements display',
+      'Responsive and accessible design across all devices'
+    ],
+    githubLink: 'https://github.com/satyakumarch/SJCSS', // Replace with your actual GitHub link
+    liveLink: 'https://sjcss.netlify.app/' // Replace with your actual live site link
+  },
+  {
+    id: 3,
+    title: 'Footcap - Shoe E-commerce Website',
+    description: 'A modern, responsive e-commerce website for Footcap, showcasing their latest shoe collections with intuitive navigation and shopping features designed to enhance the customer experience and drive sales.',
+    image: 'soe.png',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+    features: [
+      'Clean navigation menu with Home, About, Products, Shop, Blog, and Contact sections',
+      'Eye-catching hero section featuring the New Summer Shoes Collection',
+      'Product display with high-quality imagery on a minimalist white and blue background',
+      'Shopping cart and wishlist functionality with notification counters',
+      'Call-to-action "Shop Now" button to drive conversions',
+      'User account access for personalized shopping experience'
+    ],
+    githubLink: 'https://github.com/satyakumarch/Shoes',
+    liveLink: 'https://footcap.netlify.app/'
   }
+  
 ];
 
 const ProjectsSection = () => {
@@ -74,26 +109,31 @@ const ProjectsSection = () => {
     <section id="projects">
       <div className="container mx-auto px-4">
         <h2 className="section-heading reveal">Projects</h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
-            <div 
-              key={project.id} 
+            <div
+              key={project.id}
               className="glass-card card-hover reveal"
               style={{ animationDelay: `${index * 200}ms` }}
               onClick={() => openModal(project)}
             >
-              <div className="w-full h-48 bg-portfolio-darkblue rounded-t-xl flex items-center justify-center cursor-pointer">
-                <span className="gradient-text text-xl font-bold">{project.title}</span>
+              <div className="w-full h-48 bg-portfolio-darkblue rounded-t-xl overflow-hidden flex items-center justify-center cursor-pointer">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="object-cover w-full h-full"
+                />
               </div>
+
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-3">{project.title}</h3>
                 <p className="text-gray-300 mb-4 line-clamp-3">{project.description}</p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.slice(0, 4).map((tech, i) => (
-                    <span 
-                      key={i} 
+                    <span
+                      key={i}
                       className="bg-portfolio-blue/10 text-portfolio-lightblue px-2.5 py-1 rounded-full text-xs"
                     >
                       {tech}
@@ -105,7 +145,7 @@ const ProjectsSection = () => {
                     </span>
                   )}
                 </div>
-                
+
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
@@ -120,11 +160,12 @@ const ProjectsSection = () => {
           ))}
         </div>
       </div>
-      
+
       {selectedProject && (
         <ProjectModal project={selectedProject} onClose={closeModal} />
       )}
     </section>
+
   );
 };
 
