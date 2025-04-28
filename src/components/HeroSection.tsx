@@ -1,4 +1,3 @@
-
 import { Github, Linkedin, Mail, Phone, MessageCircle, Download } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 
@@ -27,6 +26,7 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden pt-16">
+      
       <div className="absolute inset-0 bg-gradient-to-b from-background via-portfolio-darkblue/20 to-background z-0"></div>
       
       {/* Animated background elements */}
@@ -96,15 +96,6 @@ const HeroSection = () => {
                 aria-label="Phone"
               >
                 <Phone size={24} className="animate-float animate-delay-700" />
-              </a>
-              <a
-                href="https://wa.me/918934856824"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white transition-colors hover:scale-110"
-                aria-label="WhatsApp"
-              >
-                <MessageCircle size={24} className="animate-float animate-delay-900" />
               </a>
             </div>
           </div>
