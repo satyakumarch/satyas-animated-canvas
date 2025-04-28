@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, Phone, WhatsApp } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, MessageCircle } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 
 const HeroSection = () => {
@@ -96,7 +96,7 @@ const HeroSection = () => {
                 className="text-gray-300 hover:text-white transition-colors hover:scale-110"
                 aria-label="WhatsApp"
               >
-                <WhatsApp size={24} className="animate-float animate-delay-900" />
+                <MessageCircle size={24} className="animate-float animate-delay-900" />
               </a>
             </div>
           </div>
