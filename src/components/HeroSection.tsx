@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, Phone, MessageCircle } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, MessageCircle, Download } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 
 const HeroSection = () => {
@@ -54,6 +54,14 @@ const HeroSection = () => {
               <a href="#projects" className="btn-secondary flex justify-center items-center gap-2">
                 View Projects
               </a>
+              <a 
+                href="/satya.pdf" 
+                download 
+                className="btn-secondary flex justify-center items-center gap-2 hover:bg-portfolio-blue/10"
+              >
+                <Download size={20} />
+                Download CV
+              </a>
             </div>
             
             <div className="flex space-x-5 reveal animate-fade-in-up animate-delay-900">
@@ -106,7 +114,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-portfolio-blue to-portfolio-purple rounded-full opacity-20 animate-pulse"></div>
               <div className="absolute inset-4 bg-card rounded-full overflow-hidden border-2 border-portfolio-purple/50 reveal animate-scale-in">
                 <img 
-                  src="/lovable-uploads/0f72cd77-6ae6-4ac0-8af7-d9a9fa10e9c9.png" 
+                  src="/lovable-uploads/e39e6987-8e00-4ba0-9ebb-bacdf5da0b42.png" 
                   alt="Satya Kumar Chaudhary"
                   className="w-full h-full object-cover rounded-full"
                 />
