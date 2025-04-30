@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -6,7 +7,7 @@
 
 @layer base {
   :root {
-    --background: 224 71% 4%;
+    --background: 240 71% 8%; /* Slightly darker and more vibrant blue-purple background */
     --foreground: 213 31% 91%;
 
     --card: 224 71% 4%;

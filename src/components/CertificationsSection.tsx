@@ -1,3 +1,4 @@
+
 import { Award } from 'lucide-react'; 
 import { useEffect } from 'react';
 
@@ -8,7 +9,7 @@ const certificates = [
     issuer: 'NeoColab LPU',
     date: 'October 2023',
     description: 'Comprehensive course covering advanced algorithms and data structures including arrays, linked lists, trees, and graph algorithms.',
-    image: '/dsa.png'  // Add path to certificate image
+    image: '/dsa.png'
   },
   {
     id: 2,
@@ -16,7 +17,7 @@ const certificates = [
     issuer: 'Cipher School',
     date: 'March 2023',
     description: 'Intensive training in MongoDB, Express.js, React.js, and Node.js for building full-stack web applications.',
-    image: '/certificate.png'  // Add path to certificate image
+    image: '/certificate.png'
   },
   {
     id: 3,
@@ -24,7 +25,7 @@ const certificates = [
     issuer: "InternElite",
     date: "February 2024",
     description: "Completed an internship in Web Development demonstrating commendable dedication, hard work, and exceptional intelligence while making significant contributions to the program.",
-    image: '/intern.jpg'  // Add path to certificate image
+    image: '/intern.jpg'
   },
   {
     id: 4,
@@ -32,9 +33,24 @@ const certificates = [
     issuer: "NPTEL Online Certification (IIT Kharagpur)",
     date: "October 2024",
     description: "Successfully completed a 12-week course on Cloud Computing with a consolidated score of 53%, including online assignments (22.81/25) and proctored exam (30.47/75).",
-    image: "/cloud.png"  // Add path to certificate image
-   }
- 
+    image: "/cloud.png"
+  },
+  {
+    id: 5,
+    title: "Build-a-thon 2.0 Hackathon",
+    issuer: "Lovely Professional University & Board Infinity",
+    date: "April 2025",
+    description: "Participated in the Build-a-thon 2.0 Hackathon demonstrating innovation, team spirit, and commitment to solving real-world challenges through AI and Technology.",
+    image: "/lovable-uploads/a2cd0106-008d-4346-8a5b-4b630c6150f0.png"
+  },
+  {
+    id: 6,
+    title: "National Level Hackathon",
+    issuer: "Tech Innovation Hub",
+    date: "March 2025",
+    description: "Participated in a National Level Hackathon focused on creating innovative solutions for sustainable development using emerging technologies.",
+    image: "/certificate.png"
+  }
 ];
 
 const CertificationsSection = () => {
@@ -61,9 +77,9 @@ const CertificationsSection = () => {
   return (
     <section id="certifications" className="bg-secondary/30">
       <div className="container mx-auto px-4">
-        <h2 className="section-heading reveal">Certifications</h2>
+        <h2 className="section-heading reveal">Certifications & Achievements</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8  max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {certificates.map((cert, index) => (
             <div 
               key={cert.id} 
@@ -104,7 +120,6 @@ const CertificationsSection = () => {
                 <p className="text-gray-300 mb-4">{cert.description}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-gray-400">{cert.date}</span>
-                  
                 </div>
               </div>
             </div>
