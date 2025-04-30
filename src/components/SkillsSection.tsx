@@ -50,7 +50,7 @@ const SkillsSection = () => {
   }, []);
 
   return (
-    <section id="skills">
+    <section id="skills" className="bg-background">
       <div className="container mx-auto px-4">
         <h2 className="section-heading reveal">Skills</h2>
         

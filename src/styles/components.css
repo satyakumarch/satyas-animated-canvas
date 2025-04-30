@@ -1,0 +1,35 @@
+
+@layer components {
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold mb-10 text-center relative;
+  }
+  
+  .section-heading::after {
+    content: '';
+    @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-20 bg-portfolio-purple rounded-full mt-2;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-portfolio-blue to-portfolio-purple text-white rounded-lg hover:opacity-90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 border border-portfolio-purple text-portfolio-purple rounded-lg hover:bg-portfolio-purple/10 transition-all;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
+  }
+  
+  .timeline-item {
+    @apply relative pl-10 pb-10 border-l border-portfolio-blue;
+  }
+  
+  .timeline-dot {
+    @apply absolute -left-2.5 w-5 h-5 rounded-full bg-portfolio-purple;
+  }
+  
+  .glass-card {
+    @apply bg-white/10 backdrop-filter backdrop-blur-lg border border-white/20 rounded-xl shadow-xl;
+  }
+}
