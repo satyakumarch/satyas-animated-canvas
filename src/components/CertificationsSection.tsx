@@ -43,14 +43,7 @@ const certificates = [
     description: "Participated in the Build-a-thon 2.0 Hackathon demonstrating innovation, team spirit, and commitment to solving real-world challenges through AI and Technology.",
     image: "/lovable-uploads/a2cd0106-008d-4346-8a5b-4b630c6150f0.png"
   },
-  {
-    id: 6,
-    title: "National Level Hackathon",
-    issuer: "Tech Innovation Hub",
-    date: "March 2025",
-    description: "Participated in a National Level Hackathon focused on creating innovative solutions for sustainable development using emerging technologies.",
-    image: "/certificate.png"
-  }
+ 
 ];
 
 const CertificationsSection = () => {
