@@ -1,5 +1,4 @@
-
-import { Heart, Mail, Phone, Linkedin, GitHub, Twitter } from 'lucide-react';
+import { Heart, Mail, Phone, Linkedin, Github, Twitter } from 'lucide-react';
 import { Button } from './ui/button';
 
 const Footer = () => {
@@ -31,7 +30,7 @@ const Footer = () => {
                 className="bg-white/10 p-2 rounded-full hover:bg-portfolio-purple/20 transition-colors"
                 aria-label="GitHub"
               >
-                <GitHub size={18} className="text-gray-300" />
+                <Github size={18} className="text-gray-300" />
               </a>
               <a 
                 href="https://twitter.com" 
