@@ -114,11 +114,11 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className="glass-card card-hover reveal"
+              className="glass-card card-hover reveal animate-scale-in"
               style={{ animationDelay: `${index * 200}ms` }}
               onClick={() => openModal(project)}
             >
-              <div className="w-full h-48 bg-portfolio-darkblue rounded-t-xl overflow-hidden flex items-center justify-center cursor-pointer">
+              <div className="w-full h-48 bg-portfolio-darkblue rounded-t-xl overflow-hidden flex items-center justify-center cursor-pointer reveal animate-fade-in-up animate-delay-300">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -127,20 +127,21 @@ const ProjectsSection = () => {
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3">{project.title}</h3>
-                <p className="text-gray-300 mb-4 line-clamp-3">{project.description}</p>
+                <h3 className="text-xl font-bold mb-3 reveal animate-fade-in-left animate-delay-500">{project.title}</h3>
+                <p className="text-gray-300 mb-4 line-clamp-3 reveal animate-fade-in-up animate-delay-700">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.slice(0, 4).map((tech, i) => (
                     <span
                       key={i}
-                      className="bg-portfolio-blue/10 text-portfolio-lightblue px-2.5 py-1 rounded-full text-xs"
+                      className="bg-portfolio-blue/10 text-portfolio-lightblue px-2.5 py-1 rounded-full text-xs reveal animate-bounce-in"
+                      style={{ animationDelay: `${(index * 200) + (i * 100)}ms` }}
                     >
                       {tech}
                     </span>
                   ))}
                   {project.technologies.length > 4 && (
-                    <span className="bg-portfolio-purple/10 text-portfolio-lightblue px-2.5 py-1 rounded-full text-xs">
+                    <span className="bg-portfolio-purple/10 text-portfolio-lightblue px-2.5 py-1 rounded-full text-xs reveal animate-bounce-in animate-delay-900">
                       +{project.technologies.length - 4} more
                     </span>
                   )}
@@ -151,7 +152,7 @@ const ProjectsSection = () => {
                     e.stopPropagation();
                     openModal(project);
                   }}
-                  className="btn-primary w-full"
+                  className="btn-primary w-full reveal animate-slide-up animate-delay-900"
                 >
                   View Details
                 </button>

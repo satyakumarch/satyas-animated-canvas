@@ -50,8 +50,8 @@ const Navbar = () => {
           
           {/* Desktop Menu */}
           <ul className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <li key={link.name}>
+            {navLinks.map((link, index) => (
+              <li key={link.name} className="animate-fade-in-down" style={{ animationDelay: `${index * 100}ms` }}>
                 <a
                   href={link.href}
                   className="text-gray-300 hover:text-white transition-colors relative group"
@@ -61,7 +61,7 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
-            <li>
+            <li className="animate-bounce-in animate-delay-700">
               <a
                 href="#contact"
                 className="btn-primary text-sm"

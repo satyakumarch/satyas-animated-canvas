@@ -18,7 +18,10 @@ const Index = () => {
   useAnimationObserver();
 
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden animate-fade-in">
+      {/* Page loading animation overlay */}
+      <div className="fixed inset-0 bg-gradient-to-br from-background via-portfolio-darkblue/20 to-background pointer-events-none opacity-0 animate-fade-in z-0"></div>
+      
       <Navbar />
       <HeroSection />
       <AboutSection />

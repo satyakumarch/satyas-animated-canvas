@@ -76,12 +76,12 @@ const CertificationsSection = () => {
           {certificates.map((cert, index) => (
             <div 
               key={cert.id} 
-              className="glass-card card-hover reveal"
+              className="glass-card card-hover reveal animate-slide-up"
               style={{ animationDelay: `${index * 200}ms` }}
             >
               {/* Certificate Image */}
               {cert.image && (
-                <div className="w-full h-70 overflow-hidden rounded-t-lg">
+                <div className="w-full h-70 overflow-hidden rounded-t-lg reveal animate-scale-in animate-delay-300">
                   <img 
                     src={cert.image} 
                     alt={`${cert.title} Certificate`}
@@ -101,18 +101,18 @@ const CertificationsSection = () => {
               )}
               
               <div className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="bg-portfolio-purple/20 p-2 rounded-lg mr-4">
+                <div className="flex items-center mb-4 reveal animate-fade-in-left animate-delay-500">
+                  <div className="bg-portfolio-purple/20 p-2 rounded-lg mr-4 animate-bounce-in animate-delay-700">
                     <Award size={24} className="text-portfolio-purple" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold">{cert.title}</h3>
-                    <p className="text-gray-400">{cert.issuer}</p>
+                    <h3 className="text-xl font-bold reveal animate-fade-in-up animate-delay-500">{cert.title}</h3>
+                    <p className="text-gray-400 reveal animate-fade-in-up animate-delay-700">{cert.issuer}</p>
                   </div>
                 </div>
-                <p className="text-gray-300 mb-4">{cert.description}</p>
+                <p className="text-gray-300 mb-4 reveal animate-fade-in-up animate-delay-900">{cert.description}</p>
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-400">{cert.date}</span>
+                  <span className="text-sm text-gray-400 reveal animate-fade-in-right animate-delay-300">{cert.date}</span>
                 </div>
               </div>
             </div>
