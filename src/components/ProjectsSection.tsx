@@ -3,8 +3,26 @@ import { useState, useEffect } from 'react';
 import ProjectModal, { ProjectType } from './ProjectModal';
 
 const projects: ProjectType[] = [
+
+   {
+  id: 1,
+  title: 'AgriAssist – Weather Forecast and Farming Advisory System',
+  description: 'A web-based platform designed to assist farmers with real-time weather forecasts and personalized farming advisories, helping them make informed agricultural decisions.',
+  image: 'agriassist.png',
+  technologies: ['Laravel', 'PHP', 'MySQL', 'OpenWeatherMap API', 'Bootstrap'],
+  features: [
+    'Farmer registration and role-based login system',
+    'Real-time weather updates using OpenWeatherMap API',
+    'Localized crop and farming advisories',
+    'Admin dashboard for managing users and advisories',
+    'Automated weather alerts and 5-day forecast integration'
+  ],
+  githubLink: 'https://github.com/NepaSatyaTech/agriassist-ecosystem',
+  liveLink: 'https://agricul.netlify.app/'
+},
+
   {
-    id: 1,
+    id: 2,
     title: 'Food Hub Website',
     description: 'A comprehensive homestay booking platform that allows users to browse, book, and review homestay options in various locations.',
     image: 'food.png'
@@ -21,7 +39,7 @@ const projects: ProjectType[] = [
     liveLink: 'https://foodhub975.netlify.app/'
   },
   {
-    id: 2,
+    id: 3,
     title: 'E-Commerce Website',
     description: 'A feature-rich online shopping platform offering a seamless browsing and purchasing experience for users across various product categories.',
     image: 'ecom.png',
@@ -37,7 +55,7 @@ const projects: ProjectType[] = [
     liveLink: 'https://ecommercesatya.netlify.app/'
   },
   {
-    id: 3,
+    id: 4,
     title: 'School Website - SJCSS',
     description: 'A professional and engaging website for Shree Janchetana Community Secondary School, designed to showcase academic excellence, student life, and school services, while encouraging admissions through an intuitive user experience.',
     image: 'school.png', // Assuming you have saved the school image as sjcss.png
@@ -53,7 +71,7 @@ const projects: ProjectType[] = [
     liveLink: 'https://sjcss.netlify.app/' // Replace with your actual live site link
   },
   {
-    id: 3,
+    id: 5,
     title: 'Footcap - Shoe E-commerce Website',
     description: 'A modern, responsive e-commerce website for Footcap, showcasing their latest shoe collections with intuitive navigation and shopping features designed to enhance the customer experience and drive sales.',
     image: 'soe.png',
