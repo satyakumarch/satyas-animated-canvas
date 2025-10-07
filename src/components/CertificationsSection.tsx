@@ -4,7 +4,18 @@ import { useEffect } from 'react';
 
 const certificates = [
   {
-    id: 1,
+  
+  id: 1,
+  title: 'Software Development Engineer Internship',
+  issuer: 'Bluestock Fintech',
+  date: 'June 2025 - July 2025',
+  description: 'Successfully completed an internship as a Software Development Engineer (SDE) at Bluestock Fintech. Gained hands-on experience in software development, coding, and project implementation in a professional fintech environment.',
+  image: '/bluestock.png'
+
+
+  },
+  {
+    id: 2,
     title: 'Data Structures and Algorithms',
     issuer: 'NeoColab LPU',
     date: 'October 2023',
@@ -12,7 +23,7 @@ const certificates = [
     image: '/dsa.png'
   },
   {
-    id: 2,
+    id: 3,
     title: 'MERN Stack Development',
     issuer: 'Cipher School',
     date: 'March 2023',
@@ -20,7 +31,7 @@ const certificates = [
     image: '/certificate.png'
   },
   {
-    id: 3,
+    id: 4,
     title: "Web Development",
     issuer: "InternElite",
     date: "February 2024",
@@ -28,7 +39,7 @@ const certificates = [
     image: '/intern.jpg'
   },
   {
-    id: 4,
+    id: 5,
     title: "Cloud Computing",
     issuer: "NPTEL Online Certification (IIT Kharagpur)",
     date: "October 2024",
@@ -36,7 +47,7 @@ const certificates = [
     image: "/cloud.png"
   },
   {
-    id: 5,
+    id: 6,
     title: "Build-a-thon 2.0 Hackathon",
     issuer: "Lovely Professional University & Board Infinity",
     date: "April 2025",
