@@ -8,8 +8,8 @@ const projects: ProjectType[] = [
   id: 1,
   title: 'AgriAssist – Weather Forecast and Farming Advisory System',
   description: 'A web-based platform designed to assist farmers with real-time weather forecasts and personalized farming advisories, helping them make informed agricultural decisions.',
-  image: 'agriassist.png',
-  technologies: ['Laravel', 'PHP', 'MySQL', 'OpenWeatherMap API', 'Bootstrap'],
+  image: 'agri.png',
+  technologies: ["TypeScript", "CSS", "JavaScript", "HTML"],
   features: [
     'Farmer registration and role-based login system',
     'Real-time weather updates using OpenWeatherMap API',
