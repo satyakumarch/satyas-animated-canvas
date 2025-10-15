@@ -1,4 +1,4 @@
-import { Heart, Mail, Phone, Linkedin, Github, Twitter, Instagram, Youtube,Facebook } from 'lucide-react';
+import { Heart, Mail, Phone, Linkedin, Github, Twitter, Instagram, Youtube } from 'lucide-react';
 import { Button } from './ui/button';
 
 const Footer = () => {
