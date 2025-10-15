@@ -37,6 +37,35 @@ const Footer = () => {
                 <Github size={18} className="text-gray-300" />
               </a>
               <a 
+    href="https://www.facebook.com/satyakumar816" 
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white/10 p-2 rounded-full hover:bg-portfolio-purple/20 transition-colors reveal animate-scale-in animate-delay-950"
+    aria-label="Facebook"
+  >
+    <Facebook size={18} className="text-gray-300" />
+  </a>
+
+  <a 
+    href="https://www.instagram.com/satyakumar7193/" 
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white/10 p-2 rounded-full hover:bg-portfolio-purple/20 transition-colors reveal animate-scale-in animate-delay-1000"
+    aria-label="Instagram"
+  >
+    <Instagram size={18} className="text-gray-300" />
+  </a>
+
+  <a 
+    href="https://www.youtube.com/@satyakumar8444" 
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white/10 p-2 rounded-full hover:bg-portfolio-purple/20 transition-colors reveal animate-scale-in animate-delay-1050"
+    aria-label="YouTube"
+  >
+    <Youtube size={18} className="text-gray-300" />
+  </a>
+              <a 
                 href="mailto:satyakumarchaudhary603@gmail.com"
                 className="bg-white/10 p-2 rounded-full hover:bg-portfolio-purple/20 transition-colors reveal animate-scale-in"
                 style={{ animationDelay: '1100ms' }}
