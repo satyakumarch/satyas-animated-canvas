@@ -1,4 +1,4 @@
-import { Heart, Mail, Phone, Linkedin, Github, Twitter,Facebook,Instagram,Youtube } from 'lucide-react';
+import { Heart, Mail, Phone, Linkedin, Github, Twitter, Instagram, Youtube,Facebook } from 'lucide-react';
 import { Button } from './ui/button';
 
 const Footer = () => {
@@ -15,11 +15,11 @@ const Footer = () => {
             <p className="text-gray-300 mt-2 reveal animate-fade-in-up animate-delay-500">
               Passionate web developer creating exceptional digital experiences with modern technologies.
             </p>
-            
+
             {/* Social Links */}
             <div className="flex space-x-4 mt-4">
-              <a 
-                href="https://www.linkedin.com/in/satyakumar12/" 
+              <a
+                href="https://www.linkedin.com/in/satyakumar12/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 p-2 rounded-full hover:bg-portfolio-purple/20 transition-colors reveal animate-scale-in animate-delay-700"
@@ -27,8 +27,8 @@ const Footer = () => {
               >
                 <Linkedin size={18} className="text-gray-300" />
               </a>
-              <a 
-                href="https://github.com/satyakumarch" 
+              <a
+                href="https://github.com/satyakumarch"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 p-2 rounded-full hover:bg-portfolio-purple/20 transition-colors reveal animate-scale-in animate-delay-900"
@@ -36,46 +36,30 @@ const Footer = () => {
               >
                 <Github size={18} className="text-gray-300" />
               </a>
-               <a 
-    href="https://github.com/satyakumarch" 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-white/10 p-2 rounded-full hover:bg-portfolio-purple/20 transition-colors reveal animate-scale-in animate-delay-900"
-    aria-label="GitHub"
-  >
-    <Github size={18} className="text-gray-300" />
-  </a>
 
-  <a 
-    href="https://www.facebook.com/satyakumar816" 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-white/10 p-2 rounded-full hover:bg-portfolio-purple/20 transition-colors reveal animate-scale-in animate-delay-950"
-    aria-label="Facebook"
-  >
-    <Facebook size={18} className="text-gray-300" />
-  </a>
 
-  <a 
-    href="https://www.instagram.com/satyakumar7193/" 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-white/10 p-2 rounded-full hover:bg-portfolio-purple/20 transition-colors reveal animate-scale-in animate-delay-1000"
-    aria-label="Instagram"
-  >
-    <Instagram size={18} className="text-gray-300" />
-  </a>
+             
 
-  <a 
-    href="https://www.youtube.com/@satyakumar8444" 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-white/10 p-2 rounded-full hover:bg-portfolio-purple/20 transition-colors reveal animate-scale-in animate-delay-1050"
-    aria-label="YouTube"
-  >
-    <Youtube size={18} className="text-gray-300" />
-  </a>
-              <a 
+              <a
+                href="https://www.instagram.com/satyakumar7193/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 p-2 rounded-full hover:bg-portfolio-purple/20 transition-colors reveal animate-scale-in animate-delay-1000"
+                aria-label="Instagram"
+              >
+                <Instagram size={18} className="text-gray-300" />
+              </a>
+
+              <a
+                href="https://www.youtube.com/@satyakumar8444"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 p-2 rounded-full hover:bg-portfolio-purple/20 transition-colors reveal animate-scale-in animate-delay-1050"
+                aria-label="YouTube"
+              >
+                <Youtube size={18} className="text-gray-300" />
+              </a>
+              <a
                 href="mailto:satyakumarchaudhary603@gmail.com"
                 className="bg-white/10 p-2 rounded-full hover:bg-portfolio-purple/20 transition-colors reveal animate-scale-in"
                 style={{ animationDelay: '1100ms' }}
@@ -85,7 +69,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          
+
           {/* Quick Links */}
           <div className="space-y-4 reveal animate-fade-in-up animate-delay-300">
             <h3 className="text-lg font-semibold reveal animate-fade-in-down animate-delay-500">Quick Links</h3>
@@ -105,20 +89,20 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          
+
           {/* Contact Information */}
           <div className="space-y-4 reveal animate-fade-in-right animate-delay-500">
             <h3 className="text-lg font-semibold reveal animate-fade-in-down animate-delay-700">Contact Information</h3>
             <div className="space-y-3">
-              <a 
-                href="mailto:satyakumarchaudhary603@gmail.com" 
+              <a
+                href="mailto:satyakumarchaudhary603@gmail.com"
                 className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors reveal animate-fade-in-left animate-delay-900"
               >
                 <Mail size={16} />
                 <span>satyakumarchaudhary603@gmail.com</span>
               </a>
-              <a 
-                href="tel:+918934856824" 
+              <a
+                href="tel:+918934856824"
                 className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors reveal animate-fade-in-left"
                 style={{ animationDelay: '1100ms' }}
               >
@@ -133,13 +117,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Footer Bottom Section */}
         <div className="border-t border-white/10 mt-6 pt-6 flex flex-col md:flex-row justify-between items-center reveal animate-fade-in animate-delay-500">
           <p className="text-gray-400 text-sm reveal animate-fade-in-left animate-delay-700">
             &copy; {new Date().getFullYear()} Satya Kumar Chaudhary. All rights reserved.
           </p>
-          
+
           <p className="text-gray-400 text-sm mt-3 md:mt-0 flex items-center reveal animate-fade-in-right animate-delay-900">
             Made with <Heart size={14} className="mx-1 text-portfolio-purple animate-pulse" /> using React & Tailwind
           </p>
